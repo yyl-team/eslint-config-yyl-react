@@ -37,6 +37,10 @@ npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-n
     "singleQuote": true,
     "jsxSingleQuote": true,
     "parser": "typescript"
+  },
+  "scripts": {
+    "eslint": "eslint --ext=jsx,ts,tsx ./src",
+    "prettier": "prettier --write src/**/*.{ts,tsx,js}"
   }
 }
 ```
