@@ -7,11 +7,18 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "standard",
+    "prettier",
+    "prettier/react",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
   "plugins": [
     "react",
     "@typescript-eslint"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -19,11 +26,6 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": [
-    "standard",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/eslint-recommended"
-  ],
   "rules": {
     "quote-props": [
       "error",
@@ -38,7 +40,13 @@
     ],
     "no-unused-vars": 0,
     "eol-last": 0,
-    "space-before-function-paren": 0
+    "space-before-function-paren": 0,
+    "prettier/prettier": ["error", {
+      "semi": false,
+      "singleQuote": true,
+      "jsxSingleQuote": true,
+      "parser": "typescript"
+    }]
   },
   "settings": {
     "react": {
