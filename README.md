@@ -7,17 +7,10 @@ npm i eslint-config-yyl-react --save-dev
 ```
 
 ### 依赖包
-主依赖
 ```bash
 npm i typescript --save
 npm i prettier eslint --save-dev
 ```
-
-配置依赖
-```bash
-npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-node eslint-config-prettier eslint-config-standard eslint-plugin-prettier eslint-plugin-html eslint-plugin-node eslint-plugin-promise eslint-plugin-react eslint-plugin-standard --save-dev
-```
-
 
 ## usage
 修改 `package.json` 文件
