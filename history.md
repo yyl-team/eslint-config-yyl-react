@@ -1,4 +1,7 @@
 # 历史版本
+## 0.1.2 (2020-04-06)
+* feat: 更新 test-case
+
 ## 0.1.1 (2020-03-19)
 * feat: 补充 prittier 相关 配置
 * feat: 补充 test case
