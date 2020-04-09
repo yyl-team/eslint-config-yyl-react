@@ -1,4 +1,7 @@
 # 历史版本
+## 0.1.4 (2020-04-09)
+* feat: 补充 `eslint-plugin-import`
+
 ## 0.1.3 (2020-04-06)
 * feat: 更新 test-case
 

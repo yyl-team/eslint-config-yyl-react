@@ -19,12 +19,12 @@ npm i prettier eslint --save-dev
   "eslintConfig": {
     "extends": ["yyl-react"]
   },
-  "eslintIgnore": {
+  "eslintIgnore": [
     "node_modules",
     "/dist",
     "/test",
     "**/js/lib"
-  },
+  ],
   "prettier": {
     "semi": false,
     "singleQuote": true,
@@ -54,4 +54,10 @@ npm i prettier eslint --save-dev
     "semi": true
   }
 }
+```
+
+## 定义 .prettierignore
+```
+node_modules/
+dist/
 ```
