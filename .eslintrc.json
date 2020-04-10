@@ -15,8 +15,9 @@
     "plugin:@typescript-eslint/eslint-recommended"
   ],
   "plugins": [
+    "@typescript-eslint",
     "react",
-    "@typescript-eslint"
+    "react-hooks"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -31,13 +32,6 @@
       "error",
       "consistent"
     ],
-    "indent": [
-      "error",
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
     "no-unused-vars": 0,
     "eol-last": 0,
     "space-before-function-paren": 0,
@@ -45,8 +39,13 @@
       "semi": false,
       "singleQuote": true,
       "jsxSingleQuote": true,
-      "parser": "typescript"
-    }]
+      "parser": "typescript",
+      "quoteProps": "consistent",
+      "trailingComma": "none",
+      "printWidth": 100
+    }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
     "react": {

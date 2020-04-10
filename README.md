@@ -29,7 +29,10 @@ npm i prettier eslint --save-dev
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "parser": "typescript"
+    "parser": "typescript",
+    "quoteProps": "consistent",
+    "trailingComma": "none",
+    "printWidth": 100
   },
   "scripts": {
     "eslint": "eslint --ext=jsx,ts,tsx ./src",

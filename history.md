@@ -1,4 +1,11 @@
 # 历史版本
+## 0.1.6 (2020-04-10)
+* feat: 新增 `eslint-plugin-react-hooks` 插件
+* fix: 修复 三目运算符 eslint 和 prettier 打架问题
+
+## 0.1.5 (2020-04-10)
+* feat: 调整配置
+
 ## 0.1.4 (2020-04-09)
 * feat: 补充 `eslint-plugin-import`
 
