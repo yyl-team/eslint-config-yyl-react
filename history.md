@@ -1,4 +1,6 @@
 # 历史版本
+## 0.1.7 (2020-04-21)
+* fix: 修复 三目运算符 indent eslint 和 prettier 打架问题
 ## 0.1.6 (2020-04-10)
 * feat: 新增 `eslint-plugin-react-hooks` 插件
 * fix: 修复 三目运算符 eslint 和 prettier 打架问题

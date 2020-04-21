@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yyl-react",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "eslint config for yyl-react",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "prepublishOnly": "npm test"
   },
   "prettier": {
+    "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,

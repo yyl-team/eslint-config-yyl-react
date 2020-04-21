@@ -6,6 +6,55 @@ const obj = {
   '@': 2
 }
 
+const TEST_CHILD = /test_child/.test(window.location.href)
+
+const arr = [
+  {
+    label: 'home',
+    title: 'parent-home',
+    path: '/index'
+  },
+  {
+    label: 'vue2',
+    title: 'child-vue2',
+    path: '/vue2',
+    allblue: {
+      name: 'allblue_demo_child_vue2',
+      entry: '//webtest.yy.com/allblue_demo_child_vue2/',
+      activePath: `/vue2`
+    }
+  },
+  {
+    label: 'react',
+    title: 'child-react',
+    path: '/react',
+    allblue: {
+      name: 'allblue_demo_child_react',
+      entry: '//webtest.yy.com/allblue_demo_child_react/',
+      activePath: `/react`
+    }
+  },
+  {
+    path: '/',
+    redirect: '/index'
+  }
+].concat(
+  TEST_CHILD
+    ? [
+        {
+          label: 'QUERY.test_child',
+          title: 'QUERY.test_child',
+          path: '/QUERY.test_child',
+          allblue: {
+            name: 'QUERY.test_child',
+            entry: '//webtest.yy.com/QUERY.test_child/',
+            activePath: '/QUERY.test_child'
+          }
+        }
+      ]
+    : []
+)
+
 switch (obj.a) {
   case 1:
     break

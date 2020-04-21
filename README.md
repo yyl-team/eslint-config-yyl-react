@@ -26,6 +26,7 @@ npm i prettier eslint --save-dev
     "**/js/lib"
   ],
   "prettier": {
+    "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
