@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint --config ./.eslintrc.json --ext=jsx,ts,tsx ./test/base/src",
-    "prettier": "prettier --write  --write ./test/base/src/**/*.{ts,tsx,js}",
+    "prettier": "prettier --write ./test/base/src/**/*.{ts,tsx,js}",
     "test": "npm run eslint && npm run prettier && npm run eslint",
     "prepublishOnly": "npm test"
   },
