@@ -35,8 +35,8 @@ npm i prettier eslint --save-dev
     "printWidth": 100
   },
   "scripts": {
-    "eslint": "eslint --ext=jsx,ts,tsx ./src",
-    "prettier": "prettier --write src/**/*.{ts,tsx,js}"
+    "eslint": "eslint --ext=jsx,ts,tsx ./",
+    "prettier": "prettier --write ./**/*.{ts,tsx,js}"
   }
 }
 ```
@@ -61,6 +61,11 @@ npm i prettier eslint --save-dev
 
 ## 定义 .prettierignore
 ```
-node_modules/
-dist/
+**/js/lib/**
+dist/**
+node_modules/**
+**/*.json
+**/*.scss
+**/*.yml
+**/*.md
 ```
