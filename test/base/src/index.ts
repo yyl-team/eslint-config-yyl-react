@@ -6,6 +6,8 @@ const obj = {
   '@': 2
 }
 
+const str = "a'bcde"
+
 const TEST_CHILD = /test_child/.test(window.location.href)
 
 const arr = [
