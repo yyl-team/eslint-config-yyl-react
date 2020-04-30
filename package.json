@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yyl-react",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "eslint config for yyl-react",
   "main": "index.js",
   "scripts": {
