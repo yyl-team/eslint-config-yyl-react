@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yyl-react",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "eslint config for yyl-react",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,6 @@
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "parser": "typescript",
     "quoteProps": "consistent",
     "trailingComma": "none",
     "printWidth": 100

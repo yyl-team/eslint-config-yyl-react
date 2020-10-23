@@ -30,14 +30,13 @@ npm i prettier eslint --save-dev
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "parser": "typescript",
     "quoteProps": "consistent",
     "trailingComma": "none",
     "printWidth": 100
   },
   "scripts": {
     "eslint": "eslint --ext=jsx,ts,tsx ./",
-    "prettier": "prettier --write ./**/*.{ts,tsx,js}"
+    "prettier": "prettier --write ./**"
   }
 }
 ```
@@ -48,6 +47,7 @@ npm i prettier eslint --save-dev
 ```json
 {
   "eslintConfig": {
+    "root": true,
     "rules": {
       "prettier/prettier": ["error", {
         "semi": true
@@ -64,9 +64,19 @@ npm i prettier eslint --save-dev
 ```
 **/js/lib/**
 dist/**
+output/**
 node_modules/**
-**/*.json
-**/*.scss
-**/*.yml
-**/*.md
+*.yml
+.gitignore
+.prettierignore
+yarn.lock
+package-lock.json
+**/*.png
+**/*.jpg
+**/*.bmp
+**/*.jpeg
+**/*.gif
+**/*.pug
+**/*.sh
+**/*.conf
 ```
