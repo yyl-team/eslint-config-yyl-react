@@ -1,4 +1,17 @@
 # 历史版本
+
+## 0.2.0 (2021-01-06)
+* feat: 更新 `peerDependencies` `eslint` 需要 `>=7.0.0` 以上使用
+* feat: 更新 `eslint-config-node@4.1.0`
+* feat: 更新 `eslint-config-prettier@7.1.0`
+* feat: 更新 `eslint-config-standard@16.0.2`
+* feat: 更新 `eslint-plugin-html@6.1.1`
+* feat: 更新 `eslint-plugin-import@2.22.1`
+* feat: 更新 `eslint-plugin-node@11.1.0`
+* feat: 更新 `eslint-plugin-prettier@3.3.1`
+* feat: 更新 `eslint-plugin-react@7.22.0`
+* feat: 更新 `eslint-plugin-react-hooks@4.2.0`
+* feat: eslint 忽略 `camecase` 规则
 ## 0.1.9 (2020-10-23)
 * feat: 调整配置 让 prettier 可格式化 scss 文件
 
