@@ -1,5 +1,9 @@
 # 历史版本
 
+## 0.2.1 (2021-01-06)
+
+* feat: 更新 `@typescript-eslint/eslint-plugin@4.12.0`
+* feat: 更新 `@typescript-eslint/parser@4.12.0`
 ## 0.2.0 (2021-01-06)
 * feat: 更新 `peerDependencies` `eslint` 需要 `>=7.0.0` 以上使用
 * feat: 更新 `eslint-config-node@4.1.0`
