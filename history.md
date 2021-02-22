@@ -1,5 +1,9 @@
 # 历史版本
 
+## 1.0.0 (2021-02-22)
+
+* feat: 升级到 typescript>= 4.1.3
+
 ## 0.2.1 (2021-01-06)
 
 * feat: 更新 `@typescript-eslint/eslint-plugin@4.12.0`
