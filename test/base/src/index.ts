@@ -74,7 +74,7 @@ switch (obj.a) {
 export const setLocalCookie = (k: string, v: any, t?: number, domain?: string): void => {
   typeof window.localStorage !== 'undefined'
     ? localStorage.setItem(k, v)
-    : (function() {
+    : (function () {
         t = t || 365 * 12 * 60 * 60
         domain = domain || '.yy.com'
         document.cookie = k + '=' + v + ';max-age=' + t + ';domain=' + domain + ';path=/'
@@ -83,7 +83,7 @@ export const setLocalCookie = (k: string, v: any, t?: number, domain?: string): 
 
 obj.a === 1 ? (obj.a = 2) : obj.b === 1 ? (obj.b = 2) : (obj.b = 3)
 ;(async () => {
-  const r = await new Promise(resolve => {
+  const r = await new Promise((resolve) => {
     setTimeout(() => {
       resolve(2)
     }, 100)

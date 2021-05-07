@@ -1,5 +1,17 @@
 # 历史版本
 
+## 1.0.1 (2021-05-08)
+* fix: 修复 react 兼容问题
+* feat: 更新 `prettier@2.2.1`
+* feat: 更新 `eslint-plugin-promise@5.1.0`
+* feat: 更新 `eslint-plugin-prettier@3.4.0`
+* feat: 更新 `eslint-plugin-react@7.23.2`
+* feat: 更新 `eslint-plugin-html@6.1.2`
+* feat: 更新 `eslint-plugin-prettier@8.3.0`
+* feat: 更新 `@typescript-eslint/eslint-plugin@4.22.1`
+* del: 去掉 `eslint-config-node`
+* del: 去掉 `eslint-config-standard`
+
 ## 1.0.0 (2021-02-22)
 
 * feat: 升级到 typescript>= 4.1.3

@@ -79,4 +79,5 @@ package-lock.json
 **/*.pug
 **/*.sh
 **/*.conf
+**/*.log
 ```
