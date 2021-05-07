@@ -1,7 +1,7 @@
 # 历史版本
 
 ## 1.0.1 (2021-05-08)
-* fix: 修复 react 兼容问题
+* fix: 修复 react 的 eslint 兼容问题
 * feat: 更新 `prettier@2.2.1`
 * feat: 更新 `eslint-plugin-promise@5.1.0`
 * feat: 更新 `eslint-plugin-prettier@3.4.0`
