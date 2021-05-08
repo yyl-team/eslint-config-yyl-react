@@ -76,7 +76,7 @@ export const setLocalCookie = (k: string, v: any, t?: number, domain?: string): 
     ? localStorage.setItem(k, v)
     : (function () {
         t = t || 365 * 12 * 60 * 60
-        domain = domain || '.yy.com'
+        domain = domain || '.baidu.com'
         document.cookie = k + '=' + v + ';max-age=' + t + ';domain=' + domain + ';path=/'
       })()
 }
