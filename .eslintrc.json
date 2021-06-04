@@ -9,7 +9,8 @@
     "navigator": "readonly",
     "window": "readonly",
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "JSX": "readonly"
   },
   "extends": [
     "prettier",
@@ -250,7 +251,8 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"]
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-alert": "warn"
   },
   "settings": {
     "react": {
