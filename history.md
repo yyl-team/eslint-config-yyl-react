@@ -1,4 +1,6 @@
 # 历史版本
+## 1.0.3 (2021-08-23)
+* fix: 解决 eslint multiline-ternary 与 prettier 冲突问题
 ## 1.0.2 (2021-06-05)
 * fix: 修复 jsx 引用会提示错误的问题
 * feat: 补充 no-alert 规则
