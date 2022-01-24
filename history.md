@@ -1,4 +1,14 @@
 # 历史版本
+## 2.0.0 (2022-01-24)
+* feat: 更新`eslint@8.7.0`
+* feat: 更新`@typescript-eslint/eslint-plugin@5.1.0`
+* feat: 更新`@typescript-eslint/parser@5.1.0`
+* feat: 更新`eslint-plugin-html@6.2.0`
+* feat: 更新`eslint-plugin-import@2.25.4`
+* feat: 更新`eslint-plugin-prettier@4.0.0`
+* feat: 更新`eslint-plugin-promise@6.0.0`
+* feat: 更新`eslint-plugin-react@7.28.0`
+* feat: 更新`eslint-plugin-react-hooks@4.3.0`
 ## 1.0.3 (2021-08-23)
 * fix: 解决 eslint multiline-ternary 与 prettier 冲突问题
 ## 1.0.2 (2021-06-05)
