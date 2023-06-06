@@ -1,4 +1,6 @@
 # 历史版本
+## 2.1.0 (2023-06-06)
+* feat: 更新 `typescript@5.1.3`
 ## 2.0.0 (2022-01-24)
 * feat: 更新`eslint@8.7.0`
 * feat: 更新`@typescript-eslint/eslint-plugin@5.1.0`
