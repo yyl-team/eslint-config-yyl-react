@@ -1,12 +1,12 @@
-import React, { ComponentProps, useState } from 'react'
+import React, { ComponentProps, useState, ReactNode } from 'react'
 
 interface TextAppProps extends ComponentProps<'div'> {
-  headTitle: string | JSX.Element
+  headTitle: ReactNode
 }
 
-export const TestApp = (props: TextAppProps) => {
-  const [isLoading, setIsLoading] = useState(false)
-  const [isSub, setIsSub] = useState(false)
+export const TestApp = (_props: TextAppProps) => {
+  const [isLoading] = useState(false)
+  const [isSub] = useState(false)
   return (
     <div className='outside'>
       {isLoading ? (
