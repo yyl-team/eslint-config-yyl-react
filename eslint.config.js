@@ -3,19 +3,23 @@ import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import pluginReact from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
+import importPlugin from 'eslint-plugin-import'
+import promisePlugin from 'eslint-plugin-promise'
 import eslintConfigPretter from 'eslint-config-prettier'
+import eslintPluginPrettier from 'eslint-plugin-prettier'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  { languageOptions: { globals: globals.browser } },
-  pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
+  pluginJs.configs.recommended,
+  importPlugin.flatConfigs.recommended,
   pluginReact.configs.flat.recommended,
   eslintConfigPretter,
   {
+    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
     languageOptions: {
       globals: {
+        ...globals.browser,
         document: 'readonly',
         navigator: 'readonly',
         window: 'readonly',
@@ -26,11 +30,11 @@ export default [
     },
     plugins: {
       'react-hooks': reactHooks,
-      'prettier': eslintConfigPretter
+      'prettier': eslintPluginPrettier,
+      'promise': promisePlugin
     },
     rules: {
       'no-var': 'warn',
-
       'accessor-pairs': ['error', { setWithoutGet: true, enforceForClassMembers: true }],
       'array-bracket-spacing': ['error', 'never'],
       'array-callback-return': [
@@ -266,14 +270,25 @@ export default [
       'eol-last': 0,
       'space-before-function-paren': 0,
       'camelcase': 0,
+      'no-use-before-define': 'off',
+      'no-alert': 'warn',
+
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
-      'no-use-before-define': 'off',
+
+      'import/export': 'error',
+      'import/first': 'error',
+      'import/no-absolute-path': ['error', { esmodule: true, commonjs: true, amd: false }],
+      'import/no-duplicates': 'error',
+      'import/no-named-default': 'error',
+      'import/no-webpack-loader-syntax': 'error',
+
+      'promise/param-names': 'error',
+
       '@typescript-eslint/no-use-before-define': ['error'],
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-unused-expressions': 'off',
-      'no-alert': 'warn'
+      '@typescript-eslint/no-unused-expressions': 'off'
     }
   }
 ]
