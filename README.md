@@ -44,7 +44,7 @@ npm i prettier@3 eslint@9 --save-dev
 }
 ```
 
-新建 `eslint.config.js` 文件
+新建 `eslint.config.mjs` 文件
 
 ```js
 import yylReactConfig from 'eslint-config-yyl-react'

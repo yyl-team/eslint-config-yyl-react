@@ -7,7 +7,7 @@
   "scripts": {
     "u": "yarn upgrade-interactive --latest",
     "eslint": "eslint --config ./eslint.config.js ./test/base/src",
-    "prettier": "prettier --write ./test/base/src/**/*",
+    "prettier": "prettier --write ./",
     "test": "yarn eslint && yarn prettier && yarn eslint",
     "prepublishOnly": "yarn test"
   },
@@ -16,9 +16,9 @@
     "semi": false,
     "singleQuote": true,
     "jsxSingleQuote": true,
+    "endOfLine": "lf",
     "quoteProps": "consistent",
-    "trailingComma": "none",
-    "printWidth": 100
+    "trailingComma": "none"
   },
   "repository": {
     "type": "git",

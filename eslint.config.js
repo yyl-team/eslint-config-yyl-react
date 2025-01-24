@@ -36,7 +36,10 @@ export default [
     },
     rules: {
       'no-var': 'warn',
-      'accessor-pairs': ['error', { setWithoutGet: true, enforceForClassMembers: true }],
+      'accessor-pairs': [
+        'error',
+        { setWithoutGet: true, enforceForClassMembers: true }
+      ],
       'array-bracket-spacing': ['error', 'never'],
       'array-callback-return': [
         'error',
@@ -60,7 +63,11 @@ export default [
       ],
       'comma-spacing': ['error', { before: false, after: true }],
       'comma-style': ['error', 'last'],
-      'computed-property-spacing': ['error', 'never', { enforceForClassMembers: true }],
+      'computed-property-spacing': [
+        'error',
+        'never',
+        { enforceForClassMembers: true }
+      ],
       'constructor-super': 'error',
       'curly': ['error', 'multi-line'],
       'default-case-last': 'error',
@@ -109,9 +116,16 @@ export default [
       ],
       'key-spacing': ['error', { beforeColon: false, afterColon: true }],
       'keyword-spacing': ['error', { before: true, after: true }],
-      'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+      'lines-between-class-members': [
+        'error',
+        'always',
+        { exceptAfterSingleLine: true }
+      ],
       'multiline-ternary': 0,
-      'new-cap': ['error', { newIsCap: true, capIsNew: false, properties: true }],
+      'new-cap': [
+        'error',
+        { newIsCap: true, capIsNew: false, properties: true }
+      ],
       'new-parens': 'error',
       'no-array-constructor': 'error',
       'no-async-promise-executor': 'error',
@@ -191,7 +205,6 @@ export default [
       'no-this-before-super': 'error',
       'no-throw-literal': 'error',
       'no-trailing-spaces': 'error',
-      'no-undef': 'error',
       'no-undef-init': 'error',
       'no-unexpected-multiline': 'error',
       'no-unmodified-loop-condition': 'error',
@@ -219,19 +232,29 @@ export default [
       'no-with': 'error',
       'object-curly-newline': ['error', { multiline: true, consistent: true }],
       'object-curly-spacing': ['error', 'always'],
-      'object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
+      'object-property-newline': [
+        'error',
+        { allowMultiplePropertiesPerLine: true }
+      ],
       'one-var': ['error', { initialized: 'never' }],
       'operator-linebreak': [
         'error',
         'after',
         { overrides: { '?': 'before', ':': 'before', '|>': 'before' } }
       ],
-      'padded-blocks': ['error', { blocks: 'never', switches: 'never', classes: 'never' }],
+      'padded-blocks': [
+        'error',
+        { blocks: 'never', switches: 'never', classes: 'never' }
+      ],
       'prefer-const': ['error', { destructuring: 'all' }],
       'prefer-promise-reject-errors': 'error',
       'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
       'quote-props': ['error', 'consistent'],
-      'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
+      'quotes': [
+        'error',
+        'single',
+        { avoidEscape: true, allowTemplateLiterals: true }
+      ],
       'rest-spread-spacing': ['error', 'never'],
       'semi': ['error', 'never'],
       'semi-spacing': ['error', { before: false, after: true }],
@@ -273,26 +296,50 @@ export default [
       'camelcase': 0,
       'no-use-before-define': 'off',
       'no-alert': 'warn',
+      'no-undef': 'off',
 
-      'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
+      'prettier/prettier': [
+        'error',
+        {
+          tabWidth: 2,
+          semi: false,
+          singleQuote: true,
+          jsxSingleQuote: true,
+          endOfLine: 'lf',
+          quoteProps: 'consistent',
+          trailingComma: 'none'
+        }
+      ],
 
       'import/export': 'error',
       'import/first': 'error',
-      'import/no-absolute-path': ['error', { esmodule: true, commonjs: true, amd: false }],
+      'import/no-absolute-path': [
+        'error',
+        { esmodule: true, commonjs: true, amd: false }
+      ],
       'import/no-duplicates': 'error',
       'import/no-named-default': 'error',
       'import/no-webpack-loader-syntax': 'error',
       'import/no-named-as-default': 'off',
       'import/named': 'off',
+      'import/no-unresolved': 'off',
 
       'promise/param-names': 'error',
 
       '@typescript-eslint/no-use-before-define': ['error'],
-      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_' }
+      ],
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
-      '@typescript-eslint/no-require-imports': 'off'
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
+
+      'react/react-in-jsx-scope': 'off',
+
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn'
     }
   }
 ]
