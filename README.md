@@ -1,11 +1,14 @@
 # eslint-config-yyl-react
 
-为 yyl-react 项目提供 eslint@9.x prettier@3.x 配置文件
+为 yyl-react 项目提供 eslint@9.x prettier@3.x 通用配置
 
 ## install
 
 ```bash
+# npm
 npm i eslint-config-yyl-react --save-dev
+# yarn
+yarn add eslint-config-yyl-react --dev
 ```
 
 ### 依赖包
@@ -17,7 +20,7 @@ npm i prettier@3 eslint@9 --save-dev
 
 ## usage
 
-修改 `package.json` 文件
+修改 `package.json` 文件, 加入 prettier 规则
 
 ```json
 {
@@ -41,30 +44,26 @@ npm i prettier@3 eslint@9 --save-dev
 }
 ```
 
-> 为了和 prettier 不打架，请按照 `package.json` 的 `prettier` 属性进行配置
+新建 `eslint.config.js` 文件
 
-## 自定义 prettier
-
-可以通过定义 `prettier/prettier` rules 来修改
-
-```json
-{
-  "eslintConfig": {
-    "root": true,
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "semi": true
-        }
-      ]
-    }
+```js
+import yylReactConfig from 'eslint-config-yyl-react'
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+  ...yylReactConfig,
+  {
+    ignores: ['node_modules/*', 'output/*', 'test/*']
   },
-  "prettier": {
-    "semi": true
+  {
+    languageOptions: {
+      globals: {}
+    },
+    rules: {}
   }
-}
+]
 ```
+
+> 为了和 prettier 不打架，请按照 `package.json` 的 `prettier` 属性进行配置
 
 ## 定义 .prettierignore
 

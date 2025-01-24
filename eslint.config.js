@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import globals from 'globals'
 import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
@@ -282,13 +283,16 @@ export default [
       'import/no-duplicates': 'error',
       'import/no-named-default': 'error',
       'import/no-webpack-loader-syntax': 'error',
+      'import/no-named-as-default': 'off',
+      'import/named': 'off',
 
       'promise/param-names': 'error',
 
       '@typescript-eslint/no-use-before-define': ['error'],
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-unused-expressions': 'off'
+      '@typescript-eslint/no-unused-expressions': 'off',
+      '@typescript-eslint/no-require-imports': 'off'
     }
   }
 ]
