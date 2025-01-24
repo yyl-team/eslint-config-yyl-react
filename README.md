@@ -1,5 +1,7 @@
 # eslint-config-yyl-react
 
+项目已迁移至 [https://github.com/yyl-team/eslint-config-yyl](https://github.com/yyl-team/eslint-config-yyl)
+
 为 yyl-react 项目提供 eslint@9.x prettier@3.x 通用配置
 
 ## install
